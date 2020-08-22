@@ -1,0 +1,7 @@
+---
+- name: ensure postgresql databases
+  block:
+    - import_tasks: ping.yml
+    - import_tasks: databases.yml
+  tags:
+    - postgresql-databases
